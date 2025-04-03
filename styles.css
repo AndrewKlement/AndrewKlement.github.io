@@ -100,6 +100,7 @@ body{
     align-items: center;
     width: 201px;
     height: 35px;
+    padding: 2px;
     border-radius: 10px;
     background: #31473A;
     color: #e8e2db;
@@ -187,15 +188,12 @@ body{
     align-self: stretch;
 }
 
-.gitlogo, .mediumlogo{
+.gitlogo, .mediumlogo, .inlogo{
     width: 35px;
     height: 35px;
     aspect-ratio: 1/1;
 }
 
-.inlogo{
-    width: 35px;
-}
 
 
 .footer{
@@ -208,9 +206,9 @@ body{
 @media only screen and (max-width: 600px) {
     .home-cont{
         background-image: url("assets/images/20230819_113128.jpg");
-        background-size: auto 140%; /* Ensures the image covers the entire container */
-        background-position: left 45% top 3%; /* Centers the image */
-        background-repeat: no-repeat; /* Prevents repeating */
+        background-size: auto 140%; 
+        background-position: left 45% top 3%; 
+        background-repeat: no-repeat;
         background-color: rgba(49, 71, 58, 1);
         background-blend-mode: lighten;
     

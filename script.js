@@ -11,14 +11,14 @@ fetch(apiUrl)
         const reposList = document.getElementById('repos-cont');
 
         repos.forEach(repo => {
-            if (repo.name !== username) {
+            if (!repo.name.includes(username)) {
                 const div = document.createElement('div');
                 div.classList.add('grid-item');
                 div.innerHTML = `
                     <div class="project-title">${repo.name}</div>
                     <div class="project-desc">${repo.description || 'No description available.'}</div>
                     <a href="${repo.html_url}" target="_blank" class="project-logo-cont">
-                        <img src="assets/images/github-mark.svg" class="gitlogo">
+                        <img src="assets/images/github.png" class="gitlogo">
                     </a>
                 `;
                 reposList.appendChild(div);

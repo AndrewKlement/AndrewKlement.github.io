@@ -75,8 +75,7 @@ body{
 
 .desc-cont{
     display: flex;
-    height: 250px;
-    padding: 0px 110px 0px 125px;
+    padding: 20px 110px 0px 125px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -193,3 +192,57 @@ body{
     height: 35px;
     aspect-ratio: 1/1;
 }
+
+.inlogo{
+    width: 35px;
+}
+
+
+.footer{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .home-cont{
+        background-image: url("assets/images/20230819_113128.jpg");
+        background-size: auto 140%; /* Ensures the image covers the entire container */
+        background-position: left 45% top 3%; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents repeating */
+        background-color: rgba(49, 71, 58, 1);
+        background-blend-mode: lighten;
+    
+    }
+
+
+    
+    .bg-img-cont{
+        display: none;
+    }
+    
+    .title-cont{
+        width: 100%;
+        padding: 0px 25px 0px 25px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+    .desc-cont{
+        padding: 20px 25px 0px 25px;
+    }    
+
+    .works-cont, .articles-cont{
+        padding: 55px 25px 0px 25px;
+    }
+    
+    
+    .grid-item {
+        margin-bottom: 45px;
+        width: 100%;
+    }
+
+  }
+  

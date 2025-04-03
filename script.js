@@ -29,7 +29,6 @@ fetch(apiUrl)
         var grid = document.querySelector('.grid');
         var msnry = new Masonry(grid, {
             itemSelector: '.grid-item',
-            columnWidth: 376,
             gutter: 45,
             fitWidth: true,
             horizontalOrder: false

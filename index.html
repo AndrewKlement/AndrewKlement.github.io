@@ -1,87 +1,419 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <script src="assets/js/masonry.pkgd.min.js"></script>
-</head>
-<body>
-    <div class="home-cont">
-        <div class="title-cont">
-            <div class="prof-cont">
-                <img src="/assets/images/35x45a.jpg" class="profile">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Andrew Klement Winarto — Research & Engineering</title>
+    <meta
+      name="description"
+      content="Andrew Klement Winarto — Computer Science student at BINUS University, exploring privacy in LLM systems, reliable agents, and practical AI engineering."
+    />
+    <meta name="theme-color" content="#f6f4ef" />
+    <meta
+      property="og:title"
+      content="Andrew Klement Winarto — Research & Engineering"
+    />
+    <meta
+      property="og:description"
+      content="Research in AI. Systems that connect ideas to the real world."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://andrewklement.github.io/" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#top" aria-label="Andrew Klement Winarto, home"
+        >AK<span class="dot">.</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a><a href="#projects">Projects</a
+        ><a href="#background">Background</a
+        ><a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero wrap" id="top" aria-labelledby="intro-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="route-dot" aria-hidden="true"></span> COMPUTER SCIENCE
+            · AI · SYSTEMS
+          </p>
+          <h1 id="intro-title">Andrew Klement<br /><span>Winarto.</span></h1>
+          <p class="hero-lead">
+            Exploring intelligent systems.<br />Building things that work.
+          </p>
+          <p class="intro">
+            I’m a Computer Science undergraduate at BINUS University and a
+            Machine Learning Developer Intern at Charoen Pokphand Indonesia. I’m
+            interested in how LLM systems can become more useful, reliable, and
+            respectful of privacy.
+          </p>
+          <div class="actions">
+            <a class="button" href="#research"
+              >Explore my work <span aria-hidden="true">↓</span></a
+            ><a
+              class="text-link"
+              href="assets/files/Andrew%20Klement%20Winarto%20Resume.pdf"
+              >View CV <span class="file-label">PDF</span></a
+            >
+          </div>
+          <p class="personal">
+            Away from the keyboard: climbing, coffee, and building hardware.
+          </p>
+        </div>
+        <div class="hero-art">
+          <svg
+            class="contours"
+            viewBox="0 0 420 500"
+            fill="none"
+            aria-hidden="true"
+          >
+            <g stroke="currentColor" stroke-width="1">
+              <path d="M-50 400C80 420 8 180 170 180S310 50 490 80" />
+              <path d="M-50 420C110 450 20 205 177 201S330 67 490 101" />
+              <path d="M-50 440C130 470 45 230 185 222S348 92 490 122" />
+              <path d="M-50 460C151 490 63 252 193 243S365 115 490 143" />
+              <path d="M-50 480C170 510 81 276 201 264S382 138 490 164" />
+              <path d="M-50 500C192 530 100 299 209 285S399 161 490 185" />
+              <path d="M-50 380C58 395 -12 155 162 159S291 27 490 59" />
+              <path d="M-50 360C39 375 -32 133 154 138S273 5 490 38" />
+              <path d="M-50 340C18 354 -51 110 146 117S253 -18 490 17" />
+            </g>
+            <path
+              d="M80 470C210 410 115 333 259 290S247 149 350 77"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-dasharray="4 9"
+            />
+            <g fill="currentColor">
+              <circle cx="80" cy="470" r="5" />
+              <circle cx="259" cy="290" r="5" />
+              <circle cx="350" cy="77" r="5" />
+            </g>
+          </svg>
+          <figure class="portrait">
+            <img
+              src="assets/images/andrew-outdoor-portrait.png"
+              alt="Portrait of Andrew Klement Winarto"
+              width="1122"
+              height="1402"
+            />
+            <figcaption>
+              BASED IN JAKARTA, INDONESIA <span aria-hidden="true">↗</span>
+            </figcaption>
+          </figure>
+          <span class="art-note">Stay curious. Keep climbing.</span>
+        </div>
+      </section>
+
+      <section
+        class="section wrap"
+        id="research"
+        aria-labelledby="research-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">01 / RESEARCH</p>
+          <h2 id="research-title">Questions worth exploring.</h2>
+        </div>
+        <div class="research-layout">
+          <div class="section-label">Publication <span>2025</span></div>
+          <article class="publication">
+            <span class="badge">Published · Conference paper</span>
+            <h3>
+              Smart Diagnosis of Pneumonia: A Comparative Analysis of CNN and
+              Transformer-Based Models on Chest X-Ray Images
+            </h3>
+            <p class="authors">
+              <strong>Andrew Klement Winarto</strong>, Kevin Aprilian, Alexander
+              Agung Santoso Gunawan, and Rilo Chandra Pradana
+            </p>
+            <p class="venue">
+              2025 1st International Conference on Artificial Intelligence
+              Technology (ICoAIT) · IEEE
+            </p>
+            <p>
+              A comparative study of CNN and Transformer architectures for
+              pneumonia detection from chest X-ray images, examining how
+              fine-tuned models perform on the same classification task.
+            </p>
+            <div class="link-row">
+              <a href="https://ieeexplore.ieee.org/document/11308854"
+                >IEEE <span aria-hidden="true">↗</span></a
+              ><a href="https://github.com/AndrewKlement/PneumoniaDetection"
+                >Research code <span aria-hidden="true">↗</span></a
+              >
             </div>
-            <div class="title">
-                Hi, I'm Andrew, a software developer
+          </article>
+          <div class="section-label">
+            Current research <span>Undergraduate thesis</span>
+          </div>
+          <article class="thesis">
+            <span class="badge ongoing">Ongoing</span>
+            <h3>
+              Sensitive Data Protection via Context-Aware Prompt Sanitization in
+              Web-Based LLM Chatbots
+            </h3>
+            <p>
+              My undergraduate thesis explores how a privacy gateway can protect
+              sensitive information in prompts before they reach an LLM. I’m
+              investigating how to detect and rewrite sensitive content while
+              preserving the usefulness of the original prompt.
+            </p>
+          </article>
+        </div>
+        <div class="interests-heading">
+          <h3>Research interests</h3>
+          <p>Directions I’d like to explore further.</p>
+        </div>
+        <div class="interests">
+          <article>
+            <span class="small-index">/ 01</span>
+            <h4>Tool selection for agents</h4>
+            <p>
+              How can agents find relevant tools and skills from large
+              collections while keeping context focused and retaining the
+              capabilities a task needs?
+            </p>
+          </article>
+          <article>
+            <span class="small-index">/ 02</span>
+            <h4>Reliability & recovery</h4>
+            <p>
+              How should agents respond when tools fail or access is
+              unavailable? I’m interested in recovery strategies and ways to
+              evaluate their effectiveness.
+            </p>
+          </article>
+          <article>
+            <span class="small-index">/ 03</span>
+            <h4>Privacy in LLM systems</h4>
+            <p>
+              Recognizing sensitive information in context and sanitizing
+              prompts without losing their meaning—the focus of my current
+              thesis.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section projects-section"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="wrap">
+          <div class="section-heading heading-row">
+            <div>
+              <p class="eyebrow">02 / SELECTED PROJECTS</p>
+              <h2 id="projects-title">From an idea to a working system.</h2>
             </div>
+            <a class="text-link" href="https://github.com/AndrewKlement"
+              >More on GitHub ↗</a
+            >
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-top">
+                <span class="eyebrow">AI + PHYSICAL SYSTEMS</span
+                ><span aria-hidden="true">01</span>
+              </div>
+              <h3>Gaggiuino MCP</h3>
+              <p>
+                Connecting an espresso machine to AI clients through MCP. The
+                server exposes machine status and shot telemetry for analysis,
+                bringing my interests in coffee, hardware, and AI together.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>MCP</li>
+                <li>Python</li>
+                <li>Gaggiuino</li>
+              </ul>
+              <a href="https://github.com/AndrewKlement/gaggiuino-mcp"
+                >Explore project <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="project-card">
+              <div class="project-top">
+                <span class="eyebrow">GENERATIVE AUDIO</span
+                ><span aria-hidden="true">02</span>
+              </div>
+              <h3>AutoMix</h3>
+              <p>
+                An application for generating transitions between music clips.
+                It explores AudioLDM and MusicGen with audio context on both
+                sides of a transition.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>AudioLDM</li>
+                <li>MusicGen</li>
+                <li>Streamlit</li>
+              </ul>
+              <a href="https://github.com/AndrewKlement/AutoMix"
+                >Explore project <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="project-card">
+              <div class="project-top">
+                <span class="eyebrow">HARDWARE + SOFTWARE</span
+                ><span aria-hidden="true">03</span>
+              </div>
+              <h3>Bluetooth Coffee Scale</h3>
+              <p>
+                A connected coffee scale and companion app for tracking brewing.
+                A hands-on project spanning electronics, a physical enclosure,
+                and the software that brings the measurements to life.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Bluetooth</li>
+                <li>Arduino</li>
+                <li>Flutter</li>
+              </ul>
+              <a href="https://github.com/AndrewKlement/BluetoothCoffeeScale"
+                >Explore project <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="project-card">
+              <div class="project-top">
+                <span class="eyebrow">CONNECTED HARDWARE</span
+                ><span aria-hidden="true">04</span>
+              </div>
+              <h3>Smart Coffee Roaster</h3>
+              <p>
+                A DIY fluid bed coffee roaster built to record, analyze, and
+                control roast profiles, with Bluetooth connectivity to an app or
+                Artisan.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Embedded systems</li>
+                <li>Bluetooth</li>
+                <li>Artisan</li>
+              </ul>
+              <a href="https://github.com/AndrewKlement/CoffeeRoaster"
+                >Explore project <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
         </div>
-        <div class="bg-img-cont">
-            <img src="assets/images/20230819_113128.jpg" class="bg-img">
-        </div>
-    </div>
+      </section>
 
-    <div class="desc-cont">
-        <div class="desc">
-            I’m a Computer Science student who’s passionate about technology.
-            I enjoy working on projects that bridge the gap between hardware and software.
-            I’m also enthusiastic about coffee and games.
+      <section
+        class="section wrap"
+        id="background"
+        aria-labelledby="background-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">03 / BACKGROUND</p>
+          <h2 id="background-title">Learning through building.</h2>
         </div>
-
-        <a class="btn" target="_blank" href="assets/files/Andrew Klement Winarto Resume.pdf">
-            Check my resume >
-        </a>
-    </div>
-
-    <div class="works-cont">
-        <div class="works-title">
-            Projects
-        </div>
-        
-        <div id="repos-cont" class="grid">
-            
-        </div>
-    </div>
-    
-    <div class="articles-cont">
-        <div class="articles-title">
-            Articles
-        </div>
-        
-        <div id="articles-cont" class="grid">
-            <div class="grid-item">
-                <div class="article-title">Coffee Roasting</div>
-                <div class="article-desc">Details about my journey in building a fluid bed coffee roaster from scratch</div>
-                <a href="https://medium.com/@a.klement.w/diy-coffee-roaster-dee64f1b8520" target="_blank" class="article-logo-cont">
-                    <img src="assets/images/medium.png" class="mediumlogo">
-                </a>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              Feb 2026 — Present<span>Experience</span>
             </div>
+            <div>
+              <h3>Machine Learning Developer Intern</h3>
+              <p class="organization">Charoen Pokphand Indonesia</p>
+              <p>
+                Working on AI infrastructure and workflow orchestration,
+                including Dagster, Coder workspaces, and LiteLLM deployment.
+                Exploring agent workflows that connect project tracking with
+                development environments, alongside evaluating MCP integrations.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta">2023<span>Experience</span></div>
+            <div>
+              <h3>Freelance Mobile App Developer</h3>
+              <p>
+                Developed a survey checklist application for a shipping company,
+                working with the client team on inspection reporting and
+                follow-up workflows.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              Sep 2023 — Jun 2027<span>Expected graduation</span>
+            </div>
+            <div>
+              <h3>Computer Science · Artificial Intelligence</h3>
+              <p class="organization">BINUS University, Jakarta</p>
+              <p>
+                Undergraduate studies with a focus on artificial intelligence,
+                supported by research and projects across machine learning,
+                software, and hardware.
+              </p>
+            </div>
+          </article>
         </div>
-    </div>
+      </section>
 
-    <div class="footer">
-        <a href="https://github.com/AndrewKlement" target="_blank" class="project-logo-cont">
-            <img src="assets/images/github.png" class="gitlogo">
-        </a>
-
-        <a href="https://medium.com/@a.klement.w" target="_blank" class="article-logo-cont">
-            <img src="assets/images/medium.png" class="mediumlogo">
-        </a>
-
-        <a href="https://www.linkedin.com/in/andrew-klement-winarto-b0b131212/" target="_blank" class="project-logo-cont">
-            <img src="assets/images/linkedin-logo.png" class="inlogo">
-        </a>
-        
-        <a href="mailto:andrewklementw@gmail.com" target="_blank" class="project-logo-cont">
-            <img src="assets/images/email.png" class="inlogo">
-        </a>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+      <section
+        class="section wrap writing-section"
+        id="writing"
+        aria-labelledby="writing-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">04 / WRITING</p>
+          <h2 id="writing-title">Notes from the workbench.</h2>
+        </div>
+        <a
+          class="article-row"
+          href="https://medium.com/@a.klement.w/dialing-in-espresso-using-mcp-server-0207819fe93a"
+          ><div>
+            <span class="eyebrow">COFFEE × AI</span>
+            <h3>Dialing in espresso using an MCP server</h3>
+            <p>Connecting espresso shot data with AI-assisted analysis.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span></a
+        >
+        <a
+          class="article-row"
+          href="https://medium.com/@a.klement.w/diy-coffee-roaster-dee64f1b8520"
+          ><div>
+            <span class="eyebrow">BUILD JOURNAL</span>
+            <h3>DIY coffee roaster</h3>
+            <p>My journey building a fluid bed coffee roaster from scratch.</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span></a
+        >
+      </section>
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="wrap contact-inner">
+          <div>
+            <p class="eyebrow">05 / CONTACT</p>
+            <h2 id="contact-title">Let’s compare notes.</h2>
+            <p>
+              Interested in research, useful AI systems, or a good coffee
+              project? I’d be happy to connect.
+            </p>
+            <a class="email-link" href="mailto:andrewklementw@gmail.com"
+              >andrewklementw@gmail.com <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="contact-links">
+            <a href="assets/files/Andrew%20Klement%20Winarto%20Resume.pdf"
+              >View CV (PDF) ↗</a
+            ><a href="https://github.com/AndrewKlement">GitHub ↗</a
+            ><a
+              href="https://www.linkedin.com/in/andrew-klement-winarto-b0b131212/"
+              >LinkedIn ↗</a
+            ><a href="https://medium.com/@a.klement.w">Medium ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap footer">
+      <span>© 2026 Andrew Klement Winarto</span
+      ><a href="#top">Back to the top ↑</a>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
 </html>
